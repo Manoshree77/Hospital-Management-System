@@ -31,15 +31,17 @@ import {
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+// 🔒 Firebase configuration (sensitive info masked)
 const firebaseConfig = {
-  apiKey: "AIzaSyCbJdI11m8lxVuC27EfFAF12psZnJa5xRg",
-  authDomain: "hospital-management-8af8e.firebaseapp.com",
-  projectId: "hospital-management-8af8e",
-  storageBucket: "hospital-management-8af8e.firebasestorage.app",
-  messagingSenderId: "890188454493",
-  appId: "1:890188454493:web:e32617339098f20f680bb4"
+  apiKey: "AIzaSy****REDACTED****",
+  authDomain: "your-project-id.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project-id.appspot.com",
+  messagingSenderId: "************",
+  appId: "1:************:web:************"
 };
 
+// ✅ Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
